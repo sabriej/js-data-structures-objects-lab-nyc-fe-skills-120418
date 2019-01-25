@@ -15,5 +15,6 @@ return drivercopy;
 }
 function destructivelyUpdateDriverByKey(driver, key){
 // const key (driver)={}
+delete driver[key];
 return driver;
 }
