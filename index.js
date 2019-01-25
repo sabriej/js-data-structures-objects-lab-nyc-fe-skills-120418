@@ -9,7 +9,7 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
  return driver;
 }
 function deleteFromDriverByKey(driver, key){
-const drivercopy={...driver};
+  const drivercopy = Object.assign({}, driver);
 delete drivercopy[key];
 return drivercopy;
 }
