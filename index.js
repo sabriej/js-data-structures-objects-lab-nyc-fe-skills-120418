@@ -13,7 +13,7 @@ const drivercopy={...driver};
 delete drivercopy[key];
 return drivercopy;
 }
-function destructivelyUpdateDriverByKey(driver, key){
+function destructivelyDeleteDriverByKey(driver, key){
 // const key (driver)={}
 delete driver[key];
 return driver;
